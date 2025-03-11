@@ -49,3 +49,8 @@
 button {
   cursor: pointer;
 }
+
+.e-grid .e-headercell {
+  color: #fff;
+  background-color: #03C9D7;
+}

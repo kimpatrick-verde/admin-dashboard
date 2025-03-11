@@ -82,7 +82,7 @@ export default function Ecommerce() {
                 </p>
               </div>
             </div>
-            <div className='mt-10 flex gap-10 flex-wrap justify-center'>
+            <div className='mt-10 flex gap-10 flex-wrap justify-center dark:text-gray-200'>
               <div className='border-r-1 border-color m-4 pr-10'>
                 <div>
                   <p>
@@ -95,11 +95,16 @@ export default function Ecommerce() {
                   <p><span className='text-3xl font-semibold'>$48,487</span></p>
                   <p className='text-gray-500 mt-1'>Expense</p>
                 </div>
-                <div className=''>
-                  <SparkLine/>
+                <div className='mt-5'>
+                  <SparkLine currentColor={currentColor} id="line-sparkLine" type="Line" height="80px" width="250px" data={SparklineAreaData} color={currentColor}/>
+                </div>
+                <div className='mt-10'>
+                  <Button color='white' bgColor={currentColor} text='Download Report' borderRadius='10px'/>
                 </div>
               </div>
-
+              <div>
+                <Stacked currentMode={currentMode} width="320px" height="360px" />
+              </div>
             </div>
           </div>
       </div>
